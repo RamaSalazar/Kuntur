@@ -15,26 +15,36 @@ a{
     color: #2C2B4B;
     text-decoration: none;
 }
+
+.pages{
+    color: white;
+}
 header{
     display: flex;
     background-color:  rgba(152, 151, 132, 0.5);
     width: 100vw;
     justify-content: space-around;
     align-items: center;
-    
     grid-area: header;
     
-    
+
 }
+
+.gradient{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
 .logo{
     background-position: right;
     height: 8em;
     width: 15em;
+    color: white;
 }
 
 .logo__img{
     height: 8em;
     width: 10em;
+    color: white;
 }
 .tittle-flex{
     display: flex;
@@ -42,22 +52,21 @@ header{
     justify-content: center;
     align-items: center;
 }
-h1.tittle{
+.tittle{
     font-weight: bold; 
     font-size: 3rem;
-    color: #2C2B4B;  
+    color: #2C2B4B; 
     background-position: center top;
     display: block;
     font-family: monotype;
     padding-left: 1rem;
 }
 
-h2.subtittle{
+.subtittle{
     font-weight: bold; 
     font-size: 2rem;
     color: #2C2B4B;
     background-position: center bottom;
- 
     font-family: monotype;
     padding-left: 1rem;
 
@@ -84,6 +93,9 @@ ul li{
     padding: 0.5em;
 }  
 
+.color-gradient{
+    color: white;
+}
 /*ESTILO MAIN*/
 
 
@@ -308,8 +320,8 @@ footer{
     background-attachment: fixed;
     background-size: cover;
     background-color:  rgba(152, 151, 132, 0.5);
-    
     grid-area: footer;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 .friends-flex{
@@ -317,6 +329,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .questions-flex{
@@ -324,6 +337,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .social-flex{
@@ -331,6 +345,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .tittle-footer{
