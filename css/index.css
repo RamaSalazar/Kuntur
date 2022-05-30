@@ -39,12 +39,20 @@ header{
     height: 8em;
     width: 15em;
     color: white;
+
+
 }
 
 .logo__img{
     height: 8em;
     width: 10em;
     color: white;
+
+        /*animation*/
+        animation-name: move;
+        animation-duration: 3s;
+        animation-direction: reverse;
+    
 }
 .tittle-flex{
     display: flex;
@@ -92,6 +100,10 @@ ul li{
     display: inline-block;
     padding: 0.5em;
 }  
+
+nav ul li a:hover{
+    background-color: #DE3C4B;
+}
 
 .color-gradient{
     color: white;
@@ -321,7 +333,7 @@ footer{
     background-size: cover;
     background-color:  rgba(152, 151, 132, 0.5);
     grid-area: footer;
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    
 }
 
 .friends-flex{
@@ -392,5 +404,15 @@ footer{
 
     .we__text{
         font-size: 1em;
+    }
+}
+
+@keyframes  move{
+    
+    0%{
+        transform: translate-X(0);
+    }
+    100%{
+        transform: translateX(100%);
     }
 }
