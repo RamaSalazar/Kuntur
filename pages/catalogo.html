@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Kuntur</title>
     <link rel="shortcut icon" href="../img/logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
         <!--PRINCIPIO HEADER -->
         <header class="gradient">
-            <div class="logo gradient">
-                <img class="logo__img" src="../img/logo.svg" >
+            <div class="logo">
+                <img class="logo__img" src="../img/logo-blanco.svg" >
             </div>
             <div class="tittle-flex">  
                 <h1 class="tittle color-gradient">KUNTUR </h1>
@@ -29,73 +30,107 @@
         </header>
     <!--FIN HEADER-->
     <!--PRINCIPIO HEADER -->
-<main class="main-pages">       
+<main class="main-pages container">       
     <h2 class="tittle-pages">CATALOGO</h2>
     <section >
-        <ul class="catalogo-flex">
-            <li class="article">
-                <img src="" alt="" class="article__image">
-                <h3 class="article__tittle">Bombachas de Gaucho</h3>
-                <p class="article__description">Bombacha de gaucho. Gabardina con bordado</p>
-                <span class="article__price">$4500</span>
+        <ul class="row row-cols-1 row-cols-md-3 g-4">            
+            <li class="col">
+                <div class="card h-100">
+                    <img src="../img/bombachas 1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Bombachas de Gaucho</h3>
+                        <p class="card-text">Bombacha de gaucho. Gabardina con bordado</p>
+                </div>
+                <div class="card-footer">
+                        <span class="text-danger">$4500</span>
+                    </div>
+                </div>
             </li>
-            <li class="article">
-                <img src="" alt="" class="article__image">
-                <h3 class="article__tittle">Remeras</h3>
-                <p class="article__description">Remeras de algodon  </p>
-                <span class="article__price">$2000</span>
+            <li class="col">
+                <div class="card h-100">
+                    <img src="../img/remeras 1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Remeras</h3>
+                        <p class="card-text">Remeras de algodon  </p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-danger">$2000</span>
+                </div>
+                </div>
             </li>
-            <li class="article">
-                <img src="" alt="" class="article__image">
-                <h3 class="article__tittle">Alpargatas</h3>
-                <p class="article__description">Alpargatas de gabardina o eco-cuero. Talles 35 al 43</p>
-                <span class="article__price">1900</span>
+            <li class="col">
+                <div class="card h-100">
+                    <img src="../img/alpargatas.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Alpargatas</h3>
+                        <p class="card-text">Alpargatas de gabardina o eco-cuero. Talles 35 al 43</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <span class="text-danger">$1900</span>
+                </div>    
+                </div>
             </li>
-            <li class="article">
-                <img src="" alt="" class="article__image">
-                <h3 class="article__tittle">Accesorios</h3>
-                <li class="article">
-                    <h4 class="article__subtittle">Set Asado</h4>
-                    <img src="" alt="" class="article__image">
-                    <p class="article__description">set asado:cuchillo + chaira + tenedor</p>
-                    <span class="article__price">$2100</span>
-                </li>
-                <li class="article">
-                    <img src="" alt="" class="article__image">
-                    <h4 class="article__subtittle">Set Mate</h4>
-                    <p class="article__description">set mate: portata termo + azucarera + yerbero + mate + bombilla</p>
-                    <span class="article__price">$5000</span>
-                </li>
-                <li class="article">
-                    <img src="" alt="" class="article__image">
-                    <h4 class="article__subtittle">Set Coquero</h4>
-                    <p class="article__description">set coquero: Coquero + biquero</p>
-                    <span class="article__price">$2400</span>
-                </li>
+            <li class="col">
+                <div class="card h-100">
+                    <img src="../img/boinas 1.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Boinas</h3>
+                        <p class="card-text">Boinas de hilo adultos. Diversos motivos</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <span class="text-danger">$2100</span>
+                </div>    
+                </div>
             </li>
-            <li class="article">
-                <h3 class="article__tittle">Tejidos</h3>
-                <li class="article">
-                    <img src="" alt="" class="article__image">
-                    <h4 class="article__subtittle">Ponchos</h4>
-                    <p class="article__description">Ponchos diversos motivos </p>
-                    <span class="article__price">$2900</span>
-                </li>
-                <li class="article">
-                    <img src="" alt="" class="article__image">
-                    <h4 class="article__subtittle">Ruanas</h4>
-                    <p class="article__description">Ruanas diversos motivos</p>
-                    <span class="article__price">$2900</span>
-                </li>
-                <li class="article">
-                    <img src="" alt="" class="article__image">
-                    <h4 class="article__subtittle">Boina</h4>
-                    <p class="article__description">Boinas diversos motivos</p>
-                    <span class="article__price">$1900</span>
-                </li>
-                
+            <li class="col">
+                <div class="card h-100">
+                    <img src="../img/ponchos 1.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Ponchos</h3>
+                        <p class="card-text">Ponchos livianos de adultos. Motivos varios </p>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <span class="text-danger">$3000</span>
+                </div>    
+                </div>
             </li>
-        </ul>
+            <li class="col">
+                <div class="card h-100">
+                    <img src="../img/ruana 1.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Ruanas</h3>
+                        <p class="card-text">Ruanas livianas de adultos. Motivos varios</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <span class="text-danger">$3000</span>
+                </div>    
+                </div>
+            </li>
+            <li class="col">
+                <div class="card h-100">
+                    <img src="../img/set-termo 1.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Set de Termo</h3>
+                        <p class="card-text">Set de termo. Porta termo, azucarera, yerbero, mate y bombilla. Excelente calidad</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <span class="text-danger">$1900</span>
+                </div>    
+                </div>
+            </li>
+            <li class="col">
+                <div class="card h-100">
+                    <img src="../img/set-cuchillo 1.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">Set Cuchillo</h3>
+                        <p class="card-text">Set de cuchillo. Cuchillo + Tenedor + Chaira</p>
+                </div>
+                <div class="card-footer justify-content-center">
+                    <span class="text-danger">$1900</span>
+                </div>    
+                </div>
+            </li>
+            
     </section>
 </main>    
     <!--FIN DE LA PAGINA-->
@@ -127,5 +162,7 @@
     
     </footer>
     <!--FIN FOOTER-->
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
