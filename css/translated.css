@@ -1,0 +1,127 @@
+/*Externos*/
+/*Misc*/
+/*Partials*/
+a {
+  color: #2C2B4B;
+  text-decoration: none; }
+
+header {
+  display: flex;
+  background-color: rgba(152, 151, 132, 0.5);
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: header; }
+
+.header__pages {
+  color: white; }
+
+.header__gradient {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); }
+
+.header__color {
+  color: white; }
+
+.header__logo {
+  background-position: right;
+  height: 8em;
+  width: 15em;
+  color: white; }
+
+.header__img {
+  height: 8em;
+  width: 10em;
+  color: white; }
+
+.header__tittle {
+  font-weight: bold;
+  font-size: 3rem;
+  color: #2C2B4B;
+  background-position: center top;
+  display: block;
+  font-family: monotype;
+  padding-left: 1rem; }
+
+.header__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.header__subtitle {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #2C2B4B;
+  background-position: center bottom;
+  font-family: monotype;
+  padding-left: 1rem; }
+
+.header__menu {
+  display: flex;
+  padding: 1em;
+  align-items: flex-end; }
+
+.header__item {
+  font-size: 1rem; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end; }
+
+ul li {
+  display: inline-block;
+  padding: 0.5em; }
+
+nav ul li a:hover {
+  background-color: #DE3C4B; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(152, 151, 132, 0.5);
+  grid-area: footer; }
+
+.footer__friends-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.footer__questions-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.footer__social-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.footer__title {
+  color: #DE3C4B;
+  padding: 0.5em 0;
+  font-size: 1.5rem;
+  text-align: center;
+  display: inline-block; }
+
+.footer__subtitle {
+  color: white;
+  padding: 0.2em 0;
+  font-size: 1rem;
+  display: inline-block; }
+
+.footer__icon {
+  padding: 0.5em;
+  display: inline-block; }
+
+/*pages*/

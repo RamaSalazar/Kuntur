@@ -1,0 +1,87 @@
+a{
+    color: #2C2B4B;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    background-color:  rgba(152, 151, 132, 0.5);
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: header;
+}
+.header{
+
+
+    &__pages{
+        color: white;
+    }
+
+    &__gradient{
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    }
+
+        &__color{
+            color: white;
+        }
+
+    &__logo{
+        background-position: right;
+        height: 8em;
+        width: 15em;
+        color: white;    
+    }
+
+        &__img{
+            height: 8em;
+            width: 10em;
+            color: white;
+        }
+    &__tittle{
+        font-weight: bold; 
+        font-size: 3rem;
+        color: #2C2B4B; 
+        background-position: center top;
+        display: block;
+        font-family: monotype;
+        padding-left: 1rem;
+    }
+        &__flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    &__subtitle{
+        font-weight: bold; 
+        font-size: 2rem;
+        color: #2C2B4B;
+        background-position: center bottom;
+        font-family: monotype;
+        padding-left: 1rem;   
+    }    
+
+    &__menu{
+        display: flex;
+        padding: 1em;
+        align-items: flex-end;
+    }
+        &__item{
+            font-size: 1rem;
+        }
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0.5em;
+}  
+
+nav ul li a:hover{
+    background-color: #DE3C4B;
+}
