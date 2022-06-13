@@ -1,0 +1,36 @@
+/*Colors*/
+$colors: (
+    primary: #2C2B4B,
+    secundary: #DE3C4B,
+    alternative:rgba(152, 151, 132, 0.5),
+    text-color: #2b2b2b,
+    base: white,
+    gradient: linear-gradient(to right, #0f0c29, #302b63, #24243e)
+);
+
+@each $color, $value in $colors {
+    .#{$color} {
+        color: #{$value};
+    }
+}
+/* Spacings*/
+
+$spacing-05: 0.5rem;
+$spacing-1: 1rem;
+$spacing-2: 2rem;
+$spacing-3: 3rem;
+$spacing-4: 4rem;
+$spacing-5: 5rem;
+
+
+/*Font-Family*/
+
+$font-principal: monotype;
+
+/*Font-Size*/
+
+$text-xs: 1em;
+$text-s: 1.5em;
+$text-m: 2em;
+$text-l: 3em;
+$text-xl: 4em;

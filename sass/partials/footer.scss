@@ -5,54 +5,44 @@ footer{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color:  rgba(152, 151, 132, 0.5);
+    background-color: map-get($colors, laternative);
     grid-area: footer;
 }
 
 .footer{
+
+    &__gradient{
+        background: map-get($colors, gradient);
+    }
     
-    &__friends-flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-
-    &__questions-flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-
-    &__social-flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 1rem;
+    &__card{
+        @include flex(column, center, center, 0);
+        margin-bottom: $spacing-1;
     }
 
     &__title{
-        color: #DE3C4B;
-        padding: 0.5em 0;
-        font-size: 1.5rem;
+        color: map-get($colors, secondary);
+        padding: $spacing-05 0;
+        font-size: $text-s;
         text-align: center;
         display: inline-block;
     }
 
     &__subtitle{
-        color: white;
+        color: map-get($colors, base);
         padding: 0.2em 0;
-        font-size: 1rem;
+        font-size: $text-xs;
         display: inline-block;
     }
 
     &__icon{
-        padding: 0.5em;
+        padding: $spacing-05;
         display: inline-block;
     }
-}
 
+@media screen and (max-width: 800px) {
+    footer{
+        flex-direction: column;
+    }
+}
+}

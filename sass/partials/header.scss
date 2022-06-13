@@ -1,87 +1,87 @@
 a{
-    color: #2C2B4B;
+    color: map-get($colors, base);;
     text-decoration: none;
 }
 header{
-    display: flex;
-    background-color:  rgba(152, 151, 132, 0.5);
-    width: 100vw;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(row, space-around, center, 0);
+    background-color:  map-get($colors, alternative);
     grid-area: header;
 }
 .header{
 
 
     &__pages{
-        color: white;
+        color: map-get($colors, base);
     }
 
     &__gradient{
-        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        background: map-get($colors, gradient);
     }
 
-        &__color{
-            color: white;
+        &--color{
+            @extend .header__gradient;
+            color: map-get($colors, base);
         }
 
     &__logo{
+        @include sizes(8rem, 15rem);
         background-position: right;
-        height: 8em;
-        width: 15em;
-        color: white;    
+        color: map-get($colors, base);    
     }
 
-        &__img{
-            height: 8em;
-            width: 10em;
-            color: white;
+        &--img{
+            @extend .header__logo;
+            @include sizes(8rem, 10rem);
+            color: map-get($colors, base);
         }
-    &__tittle{
+    &__title{
         font-weight: bold; 
-        font-size: 3rem;
-        color: #2C2B4B; 
+        font-size: $text-l;
+        color: map-get($colors, primary); 
         background-position: center top;
         display: block;
         font-family: monotype;
-        padding-left: 1rem;
+        padding-left: $spacing-1;
     }
-        &__flex{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        &--flex{
+            @extend .header__title;
+            @include flex(column, center, center, 0);
         }
+
     &__subtitle{
         font-weight: bold; 
-        font-size: 2rem;
-        color: #2C2B4B;
+        font-size: $text-m;
+        color: map-get($colors, base);
         background-position: center bottom;
         font-family: monotype;
-        padding-left: 1rem;   
+        padding-left: $spacing-1;   
     }    
 
     &__menu{
-        display: flex;
-        padding: 1em;
-        align-items: flex-end;
+        @include flex(row, flex-start, flex-end, 0);
+        padding: $spacing-1;
     }
-        &__item{
-            font-size: 1rem;
+        &--item{
+            @extend .header__menu;
+            font-size: $text-xs;
         }
 }
 
 nav{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    @include flex(row, flex-start, flex-end, 0);
 }
 
 ul li{
     display: inline-block;
-    padding: 0.5em;
+    padding: $spacing-05;
 }  
 
 nav ul li a:hover{
-    background-color: #DE3C4B;
+    background-color: map-get($colors, secondary);
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        flex-direction: column;
+    }
 }
