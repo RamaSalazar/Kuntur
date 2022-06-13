@@ -1,0 +1,3 @@
+En el archivo "index.html" sume el SEO con la descipcion, palabras claves, titulo. 
+En las paginas se agrego la descripcion y los titulos
+En el archivos sass se crearon MAPS, mixing y extend
