@@ -323,6 +323,51 @@ nav ul li a:hover{
     text-align: center;
 }
 
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap: 2em;
+    width: 100vw;
+}
+
+.grid1{
+    background-color: red;
+    grid-column: 1/4;
+    grid-row: 1 / 3;
+    background-image: url(../img/apertura\ 1.jpg);
+    background-size: cover;
+    background-size: center;
+
+}
+
+.grid2{
+    background-color: blue;
+    grid-column: 4/5;
+    grid-row: 1 / 3;
+    background-image: url(../img/baile\ 1.jpg);
+    background-size: cover;
+    background-size: center;
+}
+
+.grid3{
+    background-color: black;
+    grid-column: 1/3;
+    grid-row: 3 / 5;
+}
+
+.grid4{
+    background-color: yellow;
+    grid-column: 3/5;
+    grid-row: 3 / 5;
+}
+
+
+
+
+
+
+
 /*ESTILO FOOTER*/
 footer{
     display: flex;
