@@ -1,12 +1,12 @@
 footer{
-    display: flex;
-    justify-content: space-around;
+    @include flex(row, space-around, flex-start , 0);
     width: 100vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: map-get($colors, laternative);
+    background-color:  map-get($colors, alternative);
     grid-area: footer;
+    margin-top: $spacing-2;
 }
 
 .footer{
@@ -21,7 +21,7 @@ footer{
     }
 
     &__title{
-        color: map-get($colors, secondary);
+        color: map-get($colors, primary);
         padding: $spacing-05 0;
         font-size: $text-s;
         text-align: center;
@@ -29,6 +29,21 @@ footer{
     }
 
     &__subtitle{
+        color: map-get($colors, primary);
+        padding: 0.2em 0;
+        font-size: $text-xs;
+        display: inline-block;
+    }
+
+    &__title--pages{
+        color: map-get($colors, base);
+        padding: $spacing-05 0;
+        font-size: $text-s;
+        text-align: center;
+        display: inline-block;
+    }
+
+    &_sutbtitle--pages{
         color: map-get($colors, base);
         padding: 0.2em 0;
         font-size: $text-xs;
@@ -40,9 +55,15 @@ footer{
         display: inline-block;
     }
 
+    &__link{
+        color: map-get($colors, primary);
+    }
+
+}
+
 @media screen and (max-width: 800px) {
     footer{
         flex-direction: column;
+        align-items: center;
     }
-}
 }

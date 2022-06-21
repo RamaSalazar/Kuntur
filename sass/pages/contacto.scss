@@ -1,10 +1,13 @@
-.main-pages-contact{
+.pages{
+
+    &__contact{
     background-image: url(../img/fondo-contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     @include flex(column, center, center, 0);
     grid-area: main;
-
+    }
+    
     &__title{
         display: flex;
         font-size: $text-xl;
@@ -34,7 +37,7 @@
     }
 
     &__contact__content{
-        border-width: $spacing-05;
+        border-width: 0.2em;
         border-style: solid;
         border-color: map-get($colors, primary);
         display: block;

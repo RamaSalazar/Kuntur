@@ -1,5 +1,5 @@
 a{
-    color: map-get($colors, base);;
+    color: map-get($colors, primary);;
     text-decoration: none;
 }
 header{
@@ -10,30 +10,49 @@ header{
 .header{
 
 
-    &__pages{
-        color: map-get($colors, base);
-    }
-
     &__gradient{
         background: map-get($colors, gradient);
     }
 
-        &--color{
-            @extend .header__gradient;
-            color: map-get($colors, base);
+    &__gradient--title{
+        font-weight: bold; 
+        font-size: $text-l;
+        color: map-get($colors, base); 
+        background-position: center top;
+        display: block;
+        font-family: monotype;
+        padding-left: $spacing-1;
+    }
+
+    &__gradient--subtitle{
+        font-weight: bold; 
+        font-size: $text-m;
+        color: map-get($colors, base);
+        background-position: center bottom;
+        font-family: monotype;
+        padding-left: $spacing-1; 
+    }
+
+    &--link{
+        color: map-get($colors, base);
+        text-decoration: none
         }
 
     &__logo{
-        @include sizes(8rem, 15rem);
+        @include sizes(8rem, 10rem);
         background-position: right;
         color: map-get($colors, base);    
     }
 
-        &--img{
-            @extend .header__logo;
-            @include sizes(8rem, 10rem);
-            color: map-get($colors, base);
+    &--img{
+        @extend .header__logo;
+        @include sizes(8rem, 10rem);
+        color: map-get($colors, base);
+        animation-name: move;
+        animation-duration: 3s;
+        animation-direction: reverse;
         }
+
     &__title{
         font-weight: bold; 
         font-size: $text-l;
@@ -43,15 +62,15 @@ header{
         font-family: monotype;
         padding-left: $spacing-1;
     }
-        &--flex{
-            @extend .header__title;
-            @include flex(column, center, center, 0);
+    &--flex{
+        @extend .header__title;
+        @include flex(column, center, center, 0);
         }
 
     &__subtitle{
         font-weight: bold; 
         font-size: $text-m;
-        color: map-get($colors, base);
+        color: map-get($colors, primary);
         background-position: center bottom;
         font-family: monotype;
         padding-left: $spacing-1;   
@@ -61,9 +80,10 @@ header{
         @include flex(row, flex-start, flex-end, 0);
         padding: $spacing-1;
     }
-        &--item{
-            @extend .header__menu;
-            font-size: $text-xs;
+
+    &--item{
+        @extend .header__menu;
+        font-size: $text-xs;
         }
 }
 
