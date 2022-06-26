@@ -6,9 +6,11 @@ header{
     @include flex(row, space-around, center, 0);
     background-color:  map-get($colors, alternative);
     grid-area: header;
+    width: 100vw;
+    
 }
 .header{
-
+    max-width: 1200px;
 
     &__gradient{
         background: map-get($colors, gradient);
@@ -46,7 +48,7 @@ header{
 
     &--img{
         @extend .header__logo;
-        @include sizes(8rem, 10rem);
+        @include sizes(12rem, 10rem);
         color: map-get($colors, base);
         animation-name: move;
         animation-duration: 3s;
@@ -103,5 +105,7 @@ nav ul li a:hover{
 @media screen and (max-width: 800px) {
     header{
         flex-direction: column;
+        text-align: center;
     }
 }
+

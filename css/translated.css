@@ -13,7 +13,7 @@ a {
 .primary {
   color: #2C2B4B; }
 
-.secundary {
+.secondary {
   color: #DE3C4B; }
 
 .alternative {
@@ -171,7 +171,9 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "none" "footer";
+  grid-template-areas: "header"
+ "none"
+ "footer";
   align-content: space-between; }
 
 .main-pages {
