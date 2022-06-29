@@ -1,12 +1,6 @@
-.pages__contact{
-    background-image: url(../img/fondo-contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: $spacing-1;
-}  
-.form{
+ .form{
     @include flex(column, space-evenly, center, 0);
-    margin-bottom: $spacing-2;
+    padding-bottom: $spacing-2;
 
     &__contact__info{
         color: map-get($colors, primary);

@@ -9,11 +9,11 @@
     <title>Kuntur | Contacto</title>
     <link rel="shortcut icon" href="../img/logo.svg">
 </head>
-<body id="pages">
+<body>
         <!--PRINCIPIO HEADER -->
         <header class="header__gradient header--color">
             <div class="header__logo">
-                <img class="header--img" src="../img/logo-blanco.svg" >
+                <a href="../index.html"><img class="header--img" src="../img/logo-blanco.svg" alt="logo de la marca"></a>
             </div>
             <div class="title-flex">  
                 <h1 class="header__gradient--title">KUNTUR </h1>
@@ -22,10 +22,10 @@
             <nav class="nav">
                 <div class="nav_container">
                     <label for="menu" class="nav__label">
-                        <img src="./img/menu.svg" alt="" class="nav__img">
+                        <img src="../img/menu.svg" alt="" class="nav__img">
                     </label>
                     <input type="checkbox" id="menu" class="nav__input">
-                    <ul class="menu">
+                    <ul class="nav__menu">
                         <li class="menu__item"><a class="header--link--important nav__item" href="./catalogo.html">CATALOGO</a></li>
                         <li class="menu__item"><a class="header--link--important nav__item" href="./galeria.html">GALERIA</a></li>
                         <li class="menu__item"><a class="header--link--important nav__item" href="./quinessomos.html">QUIENES SOMOS</a></li>
@@ -36,7 +36,7 @@
         </header>
     <!--FIN HEADER-->
     <!--PRINCIPIO DE LA PAGINA-->
-<main class="pages__contact">   
+<main class="pages">   
     <h2 class="pages__title">CONTACTANOS</h2>
     <form class="form" action="index.js" method="get">
         <label class="form__contact__info"  for="nombre">Nombre:</label>
@@ -73,9 +73,12 @@
     <section class="footer__card">
         <h2 class="footer__title--pages">Nuestras Redes</h2>
         <div class="">
-            <img class="footer__icon" src="../img/face.svg" alt="">
-            <img class="footer__icon" src="../img/insta.svg" alt="">
-            <img class="footer__icon" src="../img/wsp.svg" alt="">
+            <ul>
+                <li><a href="https://www.facebook.com/kuntur"><img class="footer__icon" src="../img/face.svg" alt="icono de facebook"></a></li>
+                <li><a href=https://www.instagram.com/kuntur.ropadecampo><img class="footer__icon" src="../img/insta.svg" alt="icono de instagram"></a></li>
+                <li><a href="https://wa.me/message/4VCSNJJLSAKFB1"><img class="footer__icon" src="../img/wsp.svg" alt="icono de whatsapp"></a></li>
+                <li><a href="https://open.spotify.com/playlist/7I5kVUUWLoPLEKR7UOZNlh?si=weSN15NiQg67f0A4A0yu6A&utm_source=copy-link"><img class="footer__icon" src="../img/spotify.svg" alt="icono de spotify"></a></li>
+            </ul>
         </div>
     </section>
     

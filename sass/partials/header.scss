@@ -10,7 +10,7 @@ header{
     
 }
 .header{
-    max-width: 1200px;
+
 
     &__gradient{
         background: map-get($colors, gradient);
@@ -99,7 +99,6 @@ nav{
 }
 
 .nav{
-    height: 3rem;
     color: map-get($colors, base);
     &__container{
         @include flex(row, space-between, center, 0);
@@ -170,7 +169,7 @@ ul li{
         transition: clip-path 1s ease-in-out;
         width: 100vw;
         height: $spacing-3;
-        background: #EACDC2;
+
     }
 
     .nav__input:checked + .nav__menu{

@@ -60,73 +60,82 @@ header {
   grid-area: header;
   width: 100vw; }
 
-.header {
-  max-width: 1200px; }
-  .header__gradient {
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e); }
-  .header__gradient--title {
-    font-weight: bold;
-    font-size: 4.8em;
-    color: white;
-    background-position: center top;
-    display: block;
-    font-family: monotype;
-    padding-left: 1rem; }
-  .header__gradient--subtitle {
-    font-weight: bold;
-    font-size: 3.2em;
-    color: white;
-    background-position: center bottom;
-    font-family: monotype;
-    padding-left: 1rem; }
-  .header--link {
-    color: white;
-    text-decoration: none; }
-  .header--link--important {
-    color: white !important;
-    text-decoration: none !important; }
-  .header__logo, .header--img {
-    width: 8rem;
-    height: 10rem;
-    background-position: right;
-    color: white; }
-  .header--img {
-    width: 12rem;
-    height: 10rem;
-    color: white;
-    animation-name: move;
-    animation-duration: 3s;
-    animation-direction: reverse; }
-  .header__title, .header--flex {
-    font-weight: bold;
-    font-size: 4.8em;
-    color: #2C2B4B;
-    background-position: center top;
-    display: block;
-    font-family: monotype;
-    padding-left: 1rem; }
-  .header--flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0; }
-  .header__subtitle {
-    font-weight: bold;
-    font-size: 3.2em;
-    color: #2C2B4B;
-    background-position: center bottom;
-    font-family: monotype;
-    padding-left: 1rem; }
-  .header__menu, .header--item {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-    gap: 0;
-    padding: 1rem; }
-  .header--item {
-    font-size: 1.6em; }
+.header__gradient {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); }
+
+.header__gradient--title {
+  font-weight: bold;
+  font-size: 4.8em;
+  color: white;
+  background-position: center top;
+  display: block;
+  font-family: monotype;
+  padding-left: 1rem; }
+
+.header__gradient--subtitle {
+  font-weight: bold;
+  font-size: 3.2em;
+  color: white;
+  background-position: center bottom;
+  font-family: monotype;
+  padding-left: 1rem; }
+
+.header--link {
+  color: white;
+  text-decoration: none; }
+
+.header--link--important {
+  color: white !important;
+  text-decoration: none !important; }
+
+.header__logo, .header--img {
+  width: 8rem;
+  height: 10rem;
+  background-position: right;
+  color: white; }
+
+.header--img {
+  width: 12rem;
+  height: 10rem;
+  color: white;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-direction: reverse; }
+
+.header__title, .header--flex {
+  font-weight: bold;
+  font-size: 4.8em;
+  color: #2C2B4B;
+  background-position: center top;
+  display: block;
+  font-family: monotype;
+  padding-left: 1rem; }
+
+.header--flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0; }
+
+.header__subtitle {
+  font-weight: bold;
+  font-size: 3.2em;
+  color: #2C2B4B;
+  background-position: center bottom;
+  font-family: monotype;
+  padding-left: 1rem; }
+
+.header__menu, .header--item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 0;
+  padding: 1rem; }
+
+.header--item {
+  font-size: 1.6em; }
 
 nav {
   display: flex;
@@ -136,7 +145,6 @@ nav {
   gap: 0; }
 
 .nav {
-  height: 3rem;
   color: white; }
   .nav__container {
     display: flex;
@@ -194,8 +202,7 @@ ul li {
     clip-path: circle(0 at center);
     transition: clip-path 1s ease-in-out;
     width: 100vw;
-    height: 3rem;
-    background: #EACDC2; }
+    height: 3rem; }
   .nav__input:checked + .nav__menu {
     clip-path: circle(100% at center); }
   header a {
@@ -331,11 +338,8 @@ main {
     width: 320px;
     margin-left: 0; } }
 
-.pages__contact {
-  background-image: url(../img/fondo-contacto.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 1rem; }
+.padding-left {
+  padding-left: 0 !important; }
 
 .form {
   display: flex;
@@ -343,7 +347,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   gap: 0;
-  margin-bottom: 2rem; }
+  padding-bottom: 2rem; }
   .form__contact__info {
     color: #2C2B4B;
     font-family: monotype;
