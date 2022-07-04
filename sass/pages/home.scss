@@ -23,12 +23,41 @@
         width: 100vw;
     }
 
+    header{
+        background: map-get($colors, gradient);
+    }
+
+    .header--img{
+        background-color: map-get($colors, base);
+    }
+
+    .header__title{
+        color: map-get($colors, base); 
+    }
+
+    .header__subtitle{
+        color: map-get($colors, base); 
+    }
+
+    .nav__item{
+        color: map-get($colors, base); 
+    }
+
     #home{
         background-image: none;
     }
 
     footer{
         margin-top: 0;
+        background: map-get($colors, gradient);
+    }
+
+    .footer__title{
+        color: map-get($colors, base); 
+    }
+
+    .footer__subtitle{
+        color: map-get($colors, base); 
     }
 
     @media screen and (max-width: 500px) {    
@@ -43,6 +72,10 @@
             width: 320px;
             margin-left: 0 ;
         }
+        main{
+            margin-top: 2rem;
+        }
+        
 }
 }
 }
